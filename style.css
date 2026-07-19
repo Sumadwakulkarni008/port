@@ -24,9 +24,9 @@ nav {
   padding: 28px 6vw;
   mix-blend-mode: difference;   
 }
-.nav-mark { font-family: 'Unbounded'; font-weight: 800; font-size: 1.1rem;color: #fff; }
+.nav-mark { font-family: 'Unbounded'; font-weight: 800; font-size: 1.1rem;color: #e7e4e4; }
 .nav-links { display: flex; gap: 36px; }
-.nav-links a { font-size: 0.85rem; text-transform: uppercase;color: #050101;  }
+.nav-links a { font-size: 0.85rem; text-transform: uppercase;color: #e4dada;  }
 
 /* ---------- HERO ---------- */
 .hero {
@@ -79,7 +79,7 @@ nav {
 }
 
 /* ---------- ABOUT ---------- */
-.about { background: #f5f1ea; color: #0b0b14; padding: 120px 6vw; }
+.about { background: #dbdbdb; color: #0b0b14; padding: 120px 6vw; }
 .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; }
 .tag { color: #ff5caa; font-size: 0.85rem; text-transform: uppercase; display: block; margin-bottom: 16px; }
 .about h2 { font-family: 'Unbounded'; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; }
