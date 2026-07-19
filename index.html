@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <!-- <nav>
-            <div class="nav-mark"> SUMADWA KULKARNI </div>
-            <div class="nav-links">
-                <a href="#about">About me</a>
-                <a href="#work">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav> -->
-        <section class="hero">
-    <div class="hero-eyebrow"><span class="dot"></span> Hey,"I'm"</div>
+<head>
+  <meta charset="UTF-8">
+  <title>SUMADWA KULKARNI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-mark">SUMADWA KULKARNI</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-eyebrow"><span class="dot"></span>Hey,"I'm"</div>
     <h1 class="kinetic" id="kinetic">
       <span class="word">SUMADWA</span>
       <span class="word grad">KULKARNI</span>
     </h1>
-    <p class="hero-sub">I'm a student of Computer science Engineering at SJBIT.</p>
+    <p class="hero-sub">Computer Science Engineering Student | Front-End Developer | Python & Data Analytics</p>
     <div class="hero-cta-row">
-      <!-- <a href="#work" class="btn primary" data-hover><span>View Work</span></a> -->
+      <a href="#work" class="btn primary" data-hover><span>View Work</span></a>
       <a href="#contact" class="btn" data-hover><span>Say Hello</span></a>
+      <a href="resume.pdf" class="btn primary" download>
+Download Resume
+</a>
     </div>
   </section>
-  <section class="about me" id="about">
+  <section class="about" id="about">
     <div class="about-grid">
       <div>
-        <span class="tag"> About Me</span>
+        <span class="tag">// About Me</span>
         <h2>Engineering student</h2>
-        <p>|I'm a 3rd year Engineering student at SJBIT, currently learning front-end web development — HTML, CSS, and JavaScript — outside of my regular coursework. This portfolio is one of my first real projects, built from scratch to actually understand how the code behind it works, not just copy-paste it.</p>
+        <p>Computer Science Engineering student at SJBIT with a strong interest in web development, Python programming, and data analytics. I enjoy building responsive websites and practical projects that strengthen my problem-solving skills. My goal is to continuously learn modern technologies and develop software that creates real-world impact.</p>
       </div>
       <!-- <div class="stat-card">
         <div class="stat"><span class="num">40+</span><span class="label">Projects shipped</span></div>
         <div class="stat"><span class="num">6</span><span class="label">Years experience</span></div>
         <div class="stat"><span class="num">12</span><span class="label">Design awards</span></div>
-      </div> -->
-      <img src="photo.jpeg" alt="Sumadwa kulkarni" class="hero-photo ">
-    </div>
+      </div>
+    </div> -->
+    <img src="photo.jpeg" alt="SUMADWA KULKARNI" class="hero-photo">
   </section>
   <section class="projects" id="work">
     <h2>Selected Work</h2>
     <span class="drag-hint">← Drag to explore →</span>
     <div class="proj-track">
-      <div class="proj-card">
+      <div class="proj-card"
+     onclick="window.open('https://github.com/Sumadwakulkarni008', '_blank')">
         <div class="proj-top"><span class="proj-num">01</span><div class="proj-arrow">↗</div></div>
         <div>
-          <div class="proj-name">Nimbus — Cloud Dashboard</div>
+          <div class="proj-name">Portfolio Website
+HTML • CSS • JavaScript</div>
           <div class="proj-tags"><span>Product Design</span><span>React</span></div>
         </div>
       </div>
       <div class="proj-card">
         <div class="proj-top"><span class="proj-num">02</span><div class="proj-arrow">↗</div></div>
         <div>
-          <div class="proj-name">Fernweg — Travel App</div>
+          <div class="proj-name">AI Skin Disease Detection
+Python • Deep Learning</div>
           <div class="proj-tags"><span>UI/UX</span><span>Motion</span></div>
         </div>
       </div>
@@ -82,16 +87,16 @@
   <section class="contact" id="contact">
     <span class="tag">// Get in touch</span>
     <h2>Let's build something <span class="grad">unforgettable.</span></h2>
-    <a href="mailto:hello@yourname.dev" class="magnetic" id="magneticBtn" data-hover>hello@yourname.dev</a>
+    <a href="mailto:sumadwakulkarni@gmail.com" class="magnetic" id="magneticBtn" data-hover>sumadwakulkarni@gmail.com</a>
     <div class="contact-links">
-      <a href="https://www.linkedin.com/in/sumadwa-kulkarni">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Instagram</a>
+      <a href="https://www.linkedin.com/in/sumadwa-kulkarni" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Sumadwakulkarni008/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://leetcode.com/u/sumadwakulkarni/" target="_blank" rel="noopener noreferrer">Leetcode</a>
     </div>
   </section>
 
-  <footer>© 2026 Your Name — Built with care.</footer>
+  <footer>© 2026 Sumadwa Kulkarni • Built with HTML, CSS & JavaScript</footer>
 
-    <script src = "script.js"></script>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>

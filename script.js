@@ -48,4 +48,15 @@ magneticBtn.addEventListener('mousemove', (e) => {
 magneticBtn.addEventListener('mouseleave', () => {
   magneticBtn.style.transform = 'translate(0, 0)';
 });
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
 
+document.querySelectorAll("section:not(.hero)").forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+});
