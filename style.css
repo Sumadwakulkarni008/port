@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Inter:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0b0b14;
+  color: #f2f0ff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- NAV ---------- */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 6vw;
+  mix-blend-mode: difference;
+}
+.nav-mark { font-family: 'Unbounded'; font-weight: 800; font-size: 1.1rem; color: #fff }
+.nav-links { display: flex; gap: 36px; }
+.nav-links a { font-size: 0.85rem; text-transform: uppercase;color: #0e0101 }
+
+/* ---------- HERO ---------- */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6vw;
+}
+.hero-eyebrow {
+  font-size: 0.85rem;
+  color: #9a97b3;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #4cc9f0;
+}
+.kinetic {
+  font-family: 'Unbounded';
+  font-weight: 900;
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 0.95;
+}
+.kinetic .grad {
+  background: linear-gradient(120deg, #7c5cff, #ff5caa, #4cc9f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-sub { max-width: 500px; margin-top: 24px; color: #9a97b3; font-size: 1.05rem; }
+.hero-cta-row { display: flex; gap: 18px; margin-top: 36px; }
+.btn {
+  padding: 16px 30px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,.25);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.btn.primary {
+  background: linear-gradient(120deg, #7c5cff, #ff5caa, #4cc9f0);
+  color: #0b0b14;
+  border: none;
+  font-weight: 600;
+}
+
+/* ---------- ABOUT ---------- */
+.about { background: #f5f1ea; color: #0b0b14; padding: 120px 6vw; }
+.about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; }
+.tag { color: #ff5caa; font-size: 0.85rem; text-transform: uppercase; display: block; margin-bottom: 16px; }
+.about h2 { font-family: 'Unbounded'; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; }
+.about p { max-width: 55ch; line-height: 1.7; color: #3a3750; }
+.stat-card { background: #0b0b14; color: #fff; border-radius: 20px; padding: 30px; }
+.stat { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+.num { font-family: 'Unbounded'; font-size: 1.8rem; font-weight: 800; }
+.label { font-size: 0.8rem; color: #9a97b3; }
+
+/* ---------- PROJECTS ---------- */
+.projects { background: #f5f1ea; color: #0b0b14; padding: 100px 6vw; }
+.projects h2 { font-family: 'Unbounded'; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 10px; }
+.drag-hint { display: block; font-size: 0.8rem; color: #6b6785; margin-bottom: 30px; }
+.proj-track { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 20px; }
+.proj-card {
+  flex: 0 0 auto;
+  width: 320px;
+  background: #0b0b14;
+  color: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+.proj-top { display: flex; justify-content: space-between; align-items: center; }
+.proj-arrow { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; }
+.proj-name { font-family: 'Unbounded'; font-size: 1.2rem; margin-bottom: 12px; }
+.proj-tags span { font-size: 0.7rem; border: 1px solid rgba(255,255,255,.2); padding: 5px 10px; border-radius: 100px; margin-right: 6px; }
+
+/* ---------- SKILLS ---------- */
+.skills { background: #121223; padding: 80px 0; overflow: hidden; }
+.skills h2 { font-family: 'Unbounded'; padding: 0 6vw; margin-bottom: 40px; }
+.marquee-track { display: flex; gap: 50px; white-space: nowrap; }
+.marquee-track span { font-family: 'Unbounded'; font-size: 2rem; font-weight: 800; color: #4a4768; }
+.marquee-track span.filled {
+  background: linear-gradient(120deg, #7c5cff, #ff5caa, #4cc9f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- CONTACT ---------- */
+.contact { text-align: center; padding: 140px 6vw; }
+.contact h2 { font-family: 'Unbounded'; font-size: clamp(2rem, 6vw, 4rem); margin: 20px 0 40px; }
+.contact .grad {
+  background: linear-gradient(120deg, #7c5cff, #ff5caa, #4cc9f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.magnetic {
+  display: inline-block;
+  font-family: 'Unbounded';
+  padding: 24px 48px;
+  border-radius: 100px;
+  background: linear-gradient(120deg, #7c5cff, #ff5caa, #4cc9f0);
+  color: #0b0b14;
+  font-weight: 600;
+}
+.contact-links { margin-top: 50px; display: flex; justify-content: center; gap: 30px; }
+.contact-links a { font-size: 0.85rem; color: #9a97b3; }
+
+footer { text-align: center; padding: 30px; font-size: 0.75rem; color: #6b6785; }
+
+/* animations used by JavaScript */
+.kinetic .word { display: flex; overflow: hidden; margin-right: 0.25em; }
+.char {
+  display: inline-block;
+  transform: translateY(120%);
+  animation: rise 0.8s cubic-bezier(.16,1,.3,1) forwards;
+}
+@keyframes rise {
+  to { transform: translateY(0); }
+}
+
+.marquee-track {
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee { overflow: hidden; }
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid #000000;
+  margin-top: 100px;
+}
