@@ -60,3 +60,37 @@ document.querySelectorAll("section:not(.hero)").forEach(section => {
     section.classList.add("hidden");
     observer.observe(section);
 });
+// ---------- 6. Manual skill ticker with infinite loop ----------
+const marqueeTrack = document.getElementById('marqueeTrack');
+const skillSet1 = document.getElementById('skillSet1');
+const skillPrev = document.getElementById('skillPrev');
+const skillNext = document.getElementById('skillNext');
+let scrollAmount = 0;
+const step = 150;
+const gap = 50;
+
+function getSetWidth() {
+  return skillSet1.offsetWidth + gap; // exact width of one copy + the gap after it
+}
+
+skillNext.addEventListener('click', () => {
+  scrollAmount -= step;
+  const setWidth = getSetWidth();
+
+  if (Math.abs(scrollAmount) >= setWidth) {
+    scrollAmount += setWidth;
+  }
+
+  marqueeTrack.style.transform = `translateX(${scrollAmount}px)`;
+});
+
+skillPrev.addEventListener('click', () => {
+  scrollAmount += step;
+  const setWidth = getSetWidth();
+
+  if (scrollAmount > 0) {
+    scrollAmount -= setWidth;
+  }
+
+  marqueeTrack.style.transform = `translateX(${scrollAmount}px)`;
+});
